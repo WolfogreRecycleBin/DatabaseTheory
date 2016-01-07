@@ -1,0 +1,13 @@
+// Profile STUDENT_SQL
+SQLCA.DBMS = "ODBC"
+SQLCA.AutoCommit = False
+SQLCA.DBParm = "ConnectString='DSN=STUDENT_SQL;UID=sa;PWD='"
+CONNECT;
+if SQLCA.SQLCODE <> 0 then
+	messagebox("连接数据库失败",SQLCA.SQLERRTEXT)
+	halt
+	return
+else
+	s_info='S1'//for debug
+	open(w_select_course)
+end if
