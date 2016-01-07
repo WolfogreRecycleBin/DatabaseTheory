@@ -2,6 +2,14 @@
 SQLCA.DBMS = "ODBC"
 SQLCA.AutoCommit = False
 SQLCA.DBParm = "ConnectString='DSN=STUDENT_SQL;UID=sa;PWD='"
+
+//上面三行代码的来源:
+//提前配置好SQL Server的连接,确认成功;
+//点击工具栏中的"DB Profile"按钮;
+//选定配置好的数据源;
+//点击"Edit"按钮,在弹出的窗口中点"Preview"标签;
+//将里面的内容拷过来.
+
 CONNECT;
 if SQLCA.SQLCODE <> 0 then
 	messagebox("连接数据库失败",SQLCA.SQLERRTEXT)
