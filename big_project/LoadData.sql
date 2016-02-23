@@ -10,6 +10,8 @@ insert into S(SNO , SNAME , SEX , AGE , SDEPT) values('S7' , '王铭' , '男' , '22
 insert into S(SNO , SNAME , SEX , AGE , SDEPT) values('S8' , '宣明尼' , '女' , '18' , '计算机应用' );
 insert into S(SNO , SNAME , SEX , AGE , SDEPT) values('S9' , '柳红利' , '女' , '19' , '计算机软件' );
 
+update S set LOGN = SNO, PSWD = SNO
+
 insert into C(CNO  , CNAME , CREDIT , CDEPT , TNAME) values('C1' , 'PASCAL' , '4' , '计算机应用' , '王晓名' );
 insert into C(CNO  , CNAME , CREDIT , CDEPT , TNAME) values('C2' , '数据结构' , '4' , '计算机应用' , '刘红' );
 insert into C(CNO  , CNAME , CREDIT , CDEPT , TNAME) values('C3' , '离散数学' , '4' , '计算机应用' , '李严劲' );
